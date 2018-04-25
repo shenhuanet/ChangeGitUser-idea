@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.shenhua.idea.plugin.changegituser.MainComponent">
+  <grid id="27dc6" binding="jPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="7eb3e" class="javax.swing.JLabel" binding="tvUser">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-14010136"/>
+          <opaque value="false"/>
+          <text value="Current Git User:"/>
+        </properties>
+      </component>
+      <scrollpane id="40a06">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="24ea6" class="javax.swing.JList" binding="list1" default-binding="true">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="shenhuanet | shenhuanet@126.com"/>
+                <item value="shenhua | shenhuanet@126.com"/>
+                <item value="gitee | shenhuanet@126.com"/>
+                <item value="other | shenhuanet@126.com"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="96093" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="db6a7" class="javax.swing.JButton" binding="btnAdd">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="20" height="20"/>
+                <preferred-size width="20" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <focusPainted value="false"/>
+              <iconTextGap value="0"/>
+              <label value=""/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="471dc">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="1c2f8" class="javax.swing.JButton" binding="btnRemove">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="20" height="20"/>
+                <preferred-size width="20" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <autoscrolls value="false"/>
+              <iconTextGap value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <label value=""/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="89448" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6f6ce" class="javax.swing.JButton" binding="btnOk">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <label value="OK"/>
+              <selected value="true"/>
+              <text value="OK"/>
+            </properties>
+          </component>
+          <hspacer id="867b1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="7b862" class="javax.swing.JButton" binding="btnCancel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <label value="Cancel"/>
+              <text value="Cancel"/>
+            </properties>
+          </component>
+          <component id="8e229" class="javax.swing.JLabel" binding="tvInfo">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

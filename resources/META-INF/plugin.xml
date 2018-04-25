@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+    <id>com.shenhua.idea.plugin.changegituser</id>
+    <name>ChangeGitUser</name>
+    <version>1.0.0</version>
+    <vendor email="shenhuanet@126.com" url="http://www.shenhuanet.com">ShenhuaTech</vendor>
+
+    <description><![CDATA[
+      A plug-in that help you change git user.<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      First Release.<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products  -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="ChangeGitUser.Change" class="com.shenhua.idea.plugin.changegituser.Change"
+                icon="/icon/logo_13.png"
+                text="Change Git User"
+                description="Change current git user.">
+            <add-to-group group-id="VcsGroups" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
