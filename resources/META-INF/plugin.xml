@@ -27,7 +27,7 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="ChangeGitUser.Change" class="com.shenhua.idea.plugin.changegituser.Change"
+        <action id="ChangeGitUser.Change" class="com.shenhua.idea.plugin.changegituser.ChangeAction"
                 icon="/icon/logo_13.png"
                 text="Change Git User"
                 description="Change current git user.">

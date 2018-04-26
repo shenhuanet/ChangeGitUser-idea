@@ -1,11 +1,16 @@
-package com.shenhua.idea.plugin.changegituser;
+package com.shenhua.idea.plugin.changegituser.etc;
+
+import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by Administrator on 2018/4/25.
+ * gitBean
+ * Created by shenhua on 2018/4/25.
  */
 public class GitBean {
 
+    @SerializedName("name")
     private String username;
+    @SerializedName("email")
     private String userEmail;
 
     public GitBean(String username, String userEmail) {
@@ -27,5 +32,10 @@ public class GitBean {
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
+    }
+
+    @Override
+    public String toString() {
+        return username + " -- " + userEmail;
     }
 }
